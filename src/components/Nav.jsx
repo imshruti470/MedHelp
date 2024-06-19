@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 // assets
 // import logo from "../assets/om-logo.png";
@@ -29,12 +30,12 @@ const Navbar = () => {
   }, [theme]);
 
   return (
-    <div className="navbar bg-base-100 shadow-lg px-4 sm:px-8 " >
+    <div className="navbar bg-base-100 shadow-xl px-4 sm:px-8 ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden ">
             <svg
-              xmlns="http://www.w3.org/2000/svg"
+              xmlns="/"
               className="h-5 w-5"
               fill="none"
               viewBox="0 0 24 24"
@@ -50,51 +51,99 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content  z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a>Home</a>
+              <Link to={"/"}>Home</Link>
             </li>
             <li>
-              <a>About</a>
+              <Link to={"/appointment"}>Appointment</Link>
             </li>
             <li>
-              <a>Doctors</a>
+              <Link to={"/services"}>Services</Link>
             </li>
             <li>
-              <a>Services</a>
-            </li>
-            <li>
-              <a>Contacts</a>
+              <Link to={"/doctors"}>Doctors</Link>
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-3xl font-bold text-blue-400">SoumyaCare</a>
+        <a className="btn btn-ghost text-3xl font-bold text-blue-400">Soumya</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 text-xl text-blue-400">
           <li>
-            <a>Home</a>
+            <Link to={"/"}>Home</Link>
           </li>
           <li>
-            <a>About</a>
+            <Link to={"/appointment"}>Appointment</Link>
           </li>
           <li>
-            <a>Doctors</a>
+            <Link to={"/services"}>Services</Link>
           </li>
           <li>
-            <a>Services</a>
-          </li>
-          <li>
-            <a>Contacts</a>
+            <Link to={"/doctors"}>Doctors</Link>
           </li>
         </ul>
       </div>
-      <div className="navbar-end">
-        <a className="btn">SignUp/Login</a>
-      </div>
+      {/* You can open the modal using document.getElementById('ID').showModal() method */}
+      <button
+        className="btn mr-10"
+        onClick={() => document.getElementById("my_modal_3").showModal()}
+      >
+        Login
+      </button>
+      <dialog id="my_modal_3" className="modal">
+        <div className="modal-box">
+          <form method="dialog">
+            {/* if there is a button in form, it will close the modal */}
+            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+              ✕
+            </button>
+          </form>
+          <form className="card-body">
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Email</span>
+              </label>
+              <input
+                type="email"
+                placeholder="email"
+                className="input input-bordered"
+                required
+              />
+            </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Password</span>
+              </label>
+              <input
+                type="password"
+                placeholder="password"
+                className="input input-bordered"
+                required
+              />
+              <label className="label">
+                <Link
+                  to={"/resetPassword"}
+                  className="label-text-alt link link-hover"
+                >
+                  Forgot password?
+                </Link>
+              </label>
+            </div>
+            <div className="form-control mt-6">
+              <button className="btn btn-primary">Login</button>
+              <label className="label">
+                <Link to={"/signup"} className="label-text-alt link link-hover">
+                  New Here? Sign Up
+                </Link>
+              </label>
+            </div>
+          </form>
+        </div>
+      </dialog>
       {/* Toggle button here */}
-      <button className="btn btn-square btn-ghost">
+      <button className="btn btn-square btn-ghost ">
         <label className="swap swap-rotate w-12 h-12">
           <input
             type="checkbox"

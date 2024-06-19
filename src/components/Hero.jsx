@@ -26,12 +26,12 @@ const Hero = () => {
       </>
 
       {/* <section className="py-12 bg-gray-100"> */}
-      <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold text-center mb-8 mt-8 text-blue-400">
+      <div className="container mx-auto px-4 mb-10 pb-3">
+        <h1 className="text-4xl font-bold text-center pb-3 mb-8 mt-8 text-blue-400">
           Facilities We Provide with Care
         </h1>
-        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          <div className="card w-full bg-white rounded-lg shadow-md overflow-hidden">
+        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ml-10">
+          <div className="card card-compact w-96 bg-base-100 shadow-xl">
             <figure>
               <img
                 src="https://www.elationhealth.com/wp-content/uploads/2021/01/iStock-1249601252.jpg"
@@ -49,7 +49,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="card w-full bg-white rounded-lg shadow-md overflow-hidden">
+          <div className="card card-compact w-96 bg-base-100 shadow-xl">
             <figure>
               <img
                 src="https://www.elationhealth.com/wp-content/uploads/2021/01/iStock-1249601252.jpg"
@@ -67,7 +67,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="card w-full bg-white rounded-lg shadow-md overflow-hidden">
+          <div className="card card-compact w-96 bg-base-100 shadow-xl">
             <figure>
               <img
                 src="https://www.elationhealth.com/wp-content/uploads/2021/01/iStock-1249601252.jpg"
@@ -85,7 +85,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="card w-full bg-white rounded-lg shadow-md overflow-hidden">
+          <div className="card card-compact w-96 bg-base-100 shadow-xl">
             <figure>
               <img
                 src="https://www.elationhealth.com/wp-content/uploads/2021/01/iStock-1249601252.jpg"
@@ -103,7 +103,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="card w-full bg-white rounded-lg shadow-md overflow-hidden">
+          <div className="card card-compact w-96 bg-base-100 shadow-xl">
             <figure>
               <img
                 src="https://www.elationhealth.com/wp-content/uploads/2021/01/iStock-1249601252.jpg"
@@ -121,7 +121,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="card w-full bg-white rounded-lg shadow-md overflow-hidden">
+          <div className="card card-compact w-96 bg-base-100 shadow-xl">
             <figure>
               <img
                 src="https://www.elationhealth.com/wp-content/uploads/2021/01/iStock-1249601252.jpg"
@@ -141,6 +141,9 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <h1 className="text-4xl font-bold text-center pb-3 mb-8 mt-8 text-blue-400">
+        Sign Up to Book Appointment
+      </h1>
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img src={hero2} />
@@ -174,7 +177,7 @@ const Hero = () => {
                 </label>
               </div>
               <div className="form-control mt-6">
-                <button className="btn btn-primary">Login</button>
+                <button className="btn btn-primary">Book Appointment</button>
               </div>
             </form>
           </div>
@@ -202,102 +205,54 @@ const Hero = () => {
       </div>
 
       <h1 className="text-4xl font-bold text-center mb-8 mt-8 text-blue-400">
-        Happy to Make Them Happy  </h1>
-      <div className="carousel carousel-end rounded-box">
-        <div className="carousel-item">
-          <img
-            src="https://tse4.mm.bing.net/th?id=OIP.KKTTHh4EBDD97y3-S-GyOQHaE7&pid=Api&P=0&h=180"
-            alt="Drink"
-          />
-        </div>
-        <div className="carousel-item">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg"
-            alt="Drink"
-          />
-        </div>
-        <div className="carousel-item">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg"
-            alt="Drink"
-          />
-        </div>
-        <div className="carousel-item">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg"
-            alt="Drink"
-          />
-        </div>
-        <div className="carousel-item">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg"
-            alt="Drink"
-          />
-        </div>
-        <div className="carousel-item">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg"
-            alt="Drink"
-          />
-        </div>
-        <div className="carousel-item">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg"
-            alt="Drink"
-          />
-        </div>
-      </div>
-      <div className="flex justify-center items-center mt-10 mb-10">
-        <div className="stats stats-vertical lg:stats-horizontal shadow ">
-          <div className="stat">
-            <div className="stat-title">Downloads</div>
-            <div className="stat-value">31K</div>
-            <div className="stat-desc">Jan 1st - Feb 1st</div>
+        What people say about us{" "}
+      </h1>
+      <div className="join join-vertical w-9/12 ml-48">
+        <div className="collapse collapse-arrow join-item border border-base-300">
+          <input type="radio" name="my-accordion-4" defaultChecked />
+          <div className="collapse-title text-xl font-medium">
+            Click to open this one and close others
           </div>
-
-          <div className="stat">
-            <div className="stat-title">New Users</div>
-            <div className="stat-value">4,200</div>
-            <div className="stat-desc">↗︎ 400 (22%)</div>
-          </div>
-
-          <div className="stat">
-            <div className="stat-title">New Registers</div>
-            <div className="stat-value">1,200</div>
-            <div className="stat-desc">↘︎ 90 (14%)</div>
+          <div className="collapse-content">
+            <p>hello</p>
           </div>
         </div>
-      </div>
-      <h3 className="flex justify-center items-center mt-10 mb-10 text-5xl font-bold text-blue-400">
-        Rate Us
-      </h3>
-      <div className="rating flex justify-center items-center mt-10 mb-10 rating-lg">
-        <input
-          type="radio"
-          name="rating-8"
-          className="mask mask-star-2 bg-orange-400"
-        />
-        <input
-          type="radio"
-          name="rating-8"
-          className="mask mask-star-2 bg-orange-400"
-        />
-        <input
-          type="radio"
-          name="rating-8"
-          className="mask mask-star-2 bg-orange-400"
-        />
-        <input
-          type="radio"
-          name="rating-8"
-          className="mask mask-star-2 bg-orange-400"
-          checked
-        />
-        <input
-          type="radio"
-          name="rating-8"
-          className="mask mask-star-2 bg-orange-400"
-        />
+        <div className="collapse collapse-arrow join-item border border-base-300">
+          <input type="radio" name="my-accordion-4" />
+          <div className="collapse-title text-xl font-medium">
+            Click to open this one and close others
+          </div>
+          <div className="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+        <div className="collapse collapse-arrow join-item border border-base-300">
+          <input type="radio" name="my-accordion-4" />
+          <div className="collapse-title text-xl font-medium">
+            Click to open this one and close others
+          </div>
+          <div className="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+        <div className="collapse collapse-arrow join-item border border-base-300">
+          <input type="radio" name="my-accordion-4" />
+          <div className="collapse-title text-xl font-medium">
+            Click to open this one and close others
+          </div>
+          <div className="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+        <div className="collapse collapse-arrow join-item border border-base-300">
+          <input type="radio" name="my-accordion-4" />
+          <div className="collapse-title text-xl font-medium">
+            Click to open this one and close others
+          </div>
+          <div className="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
       </div>
     </>
   );
