@@ -2,6 +2,7 @@ import React from "react";
 import hero from "../assets/hero.svg";
 import hero2 from "../assets/hero2.svg";
 import hero3 from "../assets/hero3.svg";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -27,120 +28,127 @@ const Hero = () => {
 
       {/* <section className="py-12 bg-gray-100"> */}
       <div className="container mx-auto px-4 mb-10 pb-3">
-        <h1 className="text-4xl font-bold text-center pb-3 mb-8 mt-8 text-blue-400">
+        <h1 className="text-3xl md:text-4xl font-bold text-center pb-3 mb-8 mt-8 text-blue-400">
           Facilities We Provide with Care
         </h1>
-        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
-          <div className="card card-compact w-96 bg-base-100 shadow-xl">
+        <div className="grid gap-4 xs:gap-6 sm:gap-8 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div className="card w-full md:w-96 bg-base-100 shadow-xl">
             <figure>
               <img
-                src="https://www.elationhealth.com/wp-content/uploads/2021/01/iStock-1249601252.jpg"
+                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
                 alt="Shoes"
-                className="w-full h-48 object-cover"
               />
             </figure>
-            <div className="p-6">
-              <h2 className="text-2xl font-bold mb-2">Depression</h2>
-              <p className="text-gray-700 mb-4">
-                If a dog chews shoes whose shoes does he choose?
-              </p>
-              <div className="text-right">
-                <button className="btn btn-primary">Buy Now</button>
+            <div className="card-body">
+              <h2 className="card-title">
+                Shoes!
+                <div className="badge badge-secondary">NEW</div>
+              </h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div className="card-actions justify-end">
+                <div className="badge badge-outline">Fashion</div>
+                <div className="badge badge-outline">Products</div>
               </div>
             </div>
           </div>
-          <div className="card card-compact w-96 bg-base-100 shadow-xl">
+          <div className="card w-full md:w-96 bg-base-100 shadow-xl">
             <figure>
               <img
-                src="https://www.elationhealth.com/wp-content/uploads/2021/01/iStock-1249601252.jpg"
+                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
                 alt="Shoes"
-                className="w-full h-48 object-cover"
               />
             </figure>
-            <div className="p-6">
-              <h2 className="text-2xl font-bold mb-2">Depression</h2>
-              <p className="text-gray-700 mb-4">
-                If a dog chews shoes whose shoes does he choose?
-              </p>
-              <div className="text-right">
-                <button className="btn btn-primary">Buy Now</button>
+            <div className="card-body">
+              <h2 className="card-title">
+                Shoes!
+                <div className="badge badge-secondary">NEW</div>
+              </h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div className="card-actions justify-end">
+                <div className="badge badge-outline">Fashion</div>
+                <div className="badge badge-outline">Products</div>
               </div>
             </div>
           </div>
-          <div className="card card-compact w-96 bg-base-100 shadow-xl">
+          <div className="card w-full md:w-96 bg-base-100 shadow-xl">
             <figure>
               <img
-                src="https://www.elationhealth.com/wp-content/uploads/2021/01/iStock-1249601252.jpg"
+                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
                 alt="Shoes"
-                className="w-full h-48 object-cover"
               />
             </figure>
-            <div className="p-6">
-              <h2 className="text-2xl font-bold mb-2">Depression</h2>
-              <p className="text-gray-700 mb-4">
-                If a dog chews shoes whose shoes does he choose?
-              </p>
-              <div className="text-right">
-                <button className="btn btn-primary">Buy Now</button>
+            <div className="card-body">
+              <h2 className="card-title">
+                Shoes!
+                <div className="badge badge-secondary">NEW</div>
+              </h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div className="card-actions justify-end">
+                <div className="badge badge-outline">Fashion</div>
+                <div className="badge badge-outline">Products</div>
               </div>
             </div>
           </div>
-          <div className="card card-compact w-96 bg-base-100 shadow-xl">
+          <div className="card w-full md:w-96 bg-base-100 shadow-xl">
             <figure>
               <img
-                src="https://www.elationhealth.com/wp-content/uploads/2021/01/iStock-1249601252.jpg"
+                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
                 alt="Shoes"
-                className="w-full h-48 object-cover"
               />
             </figure>
-            <div className="p-6">
-              <h2 className="text-2xl font-bold mb-2">Depression</h2>
-              <p className="text-gray-700 mb-4">
-                If a dog chews shoes whose shoes does he choose?
-              </p>
-              <div className="text-right">
-                <button className="btn btn-primary">Buy Now</button>
+            <div className="card-body">
+              <h2 className="card-title">
+                Shoes!
+                <div className="badge badge-secondary">NEW</div>
+              </h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div className="card-actions justify-end">
+                <div className="badge badge-outline">Fashion</div>
+                <div className="badge badge-outline">Products</div>
               </div>
             </div>
           </div>
-          <div className="card card-compact w-96 bg-base-100 shadow-xl">
+          <div className="card w-full md:w-96 bg-base-100 shadow-xl">
             <figure>
               <img
-                src="https://www.elationhealth.com/wp-content/uploads/2021/01/iStock-1249601252.jpg"
+                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
                 alt="Shoes"
-                className="w-full h-48 object-cover"
               />
             </figure>
-            <div className="p-6">
-              <h2 className="text-2xl font-bold mb-2">Depression</h2>
-              <p className="text-gray-700 mb-4">
-                If a dog chews shoes whose shoes does he choose?
-              </p>
-              <div className="text-right">
-                <button className="btn btn-primary">Buy Now</button>
+            <div className="card-body">
+              <h2 className="card-title">
+                Shoes!
+                <div className="badge badge-secondary">NEW</div>
+              </h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div className="card-actions justify-end">
+                <div className="badge badge-outline">Fashion</div>
+                <div className="badge badge-outline">Products</div>
               </div>
             </div>
           </div>
-          <div className="card card-compact w-96 bg-base-100 shadow-xl">
+          <div className="card w-full md:w-96 bg-base-100 shadow-xl">
             <figure>
               <img
-                src="https://www.elationhealth.com/wp-content/uploads/2021/01/iStock-1249601252.jpg"
+                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
                 alt="Shoes"
-                className="w-full h-48 object-cover"
               />
             </figure>
-            <div className="p-6">
-              <h2 className="text-2xl font-bold mb-2">Depression</h2>
-              <p className="text-gray-700 mb-4">
-                If a dog chews shoes whose shoes does he choose?
-              </p>
-              <div className="text-right">
-                <button className="btn btn-primary">Buy Now</button>
+            <div className="card-body">
+              <h2 className="card-title">
+                Shoes!
+                <div className="badge badge-secondary">NEW</div>
+              </h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div className="card-actions justify-end">
+                <div className="badge badge-outline">Fashion</div>
+                <div className="badge badge-outline">Products</div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       <h1 className="text-4xl font-bold text-center pb-3 mb-8 mt-8 text-blue-400">
         Sign Up to Book Appointment
       </h1>

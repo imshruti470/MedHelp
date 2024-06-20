@@ -1,5 +1,4 @@
 import React from "react";
-import {Link} from 'react-router-dom';
 import hoho from "../assets/undraw_not_found_re_bh2e.svg"
 
 const ForgotPassword = () => {
@@ -10,7 +9,7 @@ const ForgotPassword = () => {
       </h1>
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <img src={hoho} alt="/>
+          <img src={hoho} alt=""/>
           <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <form className="card-body">
               <div className="form-control">
