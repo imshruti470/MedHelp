@@ -71,7 +71,7 @@ const Navbar = () => {
           to={"/"}
           className="btn btn-ghost text-3xl font-bold text-blue-400"
         >
-          Soumya
+          CheckUp
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
