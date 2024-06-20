@@ -9,7 +9,7 @@ const Hero = () => {
       <>
         <div className="hero min-h-screen bg-base-200 text-blue-400">
           <div className="hero-content flex-col lg:flex-row">
-            <img src={hero} />
+            <img src={hero} alt="" />
             <div>
               <h1 className="text-5xl font-bold">Best Care For Close Ones!</h1>
               <p className="py-6 text-3xl text-gray-400">
@@ -146,7 +146,7 @@ const Hero = () => {
       </h1>
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <img src={hero2} />
+          <img src={hero2} href="" />
           <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <form className="card-body">
               <div className="form-control">
@@ -171,9 +171,12 @@ const Hero = () => {
                   required
                 />
                 <label className="label">
-                  <a href="#" className="label-text-alt link link-hover">
+                  <Link
+                    to={"/resetPassword"}
+                    className="label-text-alt link link-hover"
+                  >
                     Forgot password?
-                  </a>
+                  </Link>
                 </label>
               </div>
               <div className="form-control mt-6">
@@ -185,7 +188,7 @@ const Hero = () => {
       </div>
       <div className="hero min-h-screen bg-base-200 text-blue-400">
         <div className="hero-content flex-col lg:flex-row">
-          <img src={hero3} />
+          <img src={hero3} alt="" />
           <div>
             <h1 className="text-5xl font-bold">
               We Always Ensure The Best Treatment With Care

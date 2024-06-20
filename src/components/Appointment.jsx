@@ -9,7 +9,7 @@ const Appointment = () => {
       </h1>
       <div className="hero min-h-screen bg-base-200 text-blue-400">
         <div className="hero-content flex-col lg:flex-row">
-          <img src={hero3} />
+          <img src={hero3} alt='' />
           <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <form className="card-body">
               <div className="form-control">

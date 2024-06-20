@@ -6,7 +6,7 @@ const Services = () => {
     <>
       <div className="hero min-h-screen bg-base-200 text-blue-400">
         <div className="hero-content flex-col lg:flex-row">
-          <img src={haha} />
+          <img src={haha} alt=""/>
           <div>
             <h1 className="text-5xl font-bold">Best Care For Close Ones!</h1>
             <p className="py-6 text-3xl text-gray-400">
