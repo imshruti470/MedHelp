@@ -8,7 +8,7 @@ const Meeting = () => {
     // Generate Kit Token
     const appID = 362239873;
     const serverSecret = "3bca63f97faf78d0aef796b7dfb250f4";
-    const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(appID, serverSecret, roomID, Date.now().toString(), "Soumya");
+    const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(appID, serverSecret, roomID, Date.now().toString(), "Marko");
 
     // Create instance object from Kit Token.
     const zp = ZegoUIKitPrebuilt.create(kitToken);
