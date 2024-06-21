@@ -8,6 +8,8 @@ import Services from "./components/Services";
 import SignUp from "./components/LoginPage";
 import ForgotPassword from "./components/ForgotPassword";
 import Doctors from "./components/Doctors";
+import Search from "./components/Search.jsx"
+import Meeting from "./components/Meeting.jsx"
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
           <Route path="/signUp" element={<SignUp />} />
           <Route path="/resetPassword" element={<ForgotPassword />} />
           <Route path="/doctors" element={<Doctors />} />
+          <Route path="/bot" element={<Search />} />
+          <Route path="/meeting" element={<Meeting/>} />
           
         </Routes>
         <Footer />

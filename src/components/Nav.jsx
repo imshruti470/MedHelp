@@ -88,6 +88,9 @@ const Navbar = () => {
           <li>
             <Link to={"/doctors"}>Doctors</Link>
           </li>
+          <li>
+            <Link to={"/meeting"}>Meeting</Link>
+          </li>
         </ul>
       </div>
       {/* You can open the modal using document.getElementById('ID').showModal() method */}
