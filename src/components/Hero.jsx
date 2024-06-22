@@ -2,18 +2,21 @@ import React from "react";
 import hero from "../assets/hero.svg";
 import hero2 from "../assets/hero2.svg";
 import hero3 from "../assets/hero3.svg";
+import cardiac from "../assets/cardiac.webp"
+import gastro from "../assets/gastro.webp"
+import scoliosis from "../assets/scoliosis.webp"
 import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
     <>
       <>
-        <div className="hero min-h-screen bg-base-200 text-blue-400">
+        <div className="hero min-h-screen bg-base-200 text-blue-800">
           <div className="hero-content flex-col lg:flex-row">
             <img src={hero} alt="" />
             <div>
               <h1 className="text-5xl font-bold">Best Care For Close Ones!</h1>
-              <p className="py-6 text-3xl text-gray-400">
+              <p className="py-6 text-3xl text-gray-900">
                 Provident cupiditate voluptatem et in. Quaerat fugiat ut
                 assumenda excepturi exercitationem quasi. In deleniti eaque aut
                 repudiandae et a id nisi.
@@ -26,130 +29,58 @@ const Hero = () => {
         </div>
       </>
 
-      {/* <section className="py-12 bg-gray-100"> */}
+      
       <div className="container mx-auto px-4 mb-10 pb-3">
-        <h1 className="text-3xl md:text-4xl font-bold text-center pb-3 mb-8 mt-8 text-blue-400">
+        <h1 className="text-3xl md:text-4xl font-bold text-center pb-3 mb-8 mt-8 text-blue-800">
           Facilities We Provide with Care
         </h1>
         <div className="grid gap-4 xs:gap-6 sm:gap-8 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <div className="card w-full md:w-96 bg-base-100 shadow-xl">
             <figure>
               <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                alt="Shoes"
+                src={gastro}
+                alt="gastro"
               />
             </figure>
             <div className="card-body">
               <h2 className="card-title">
-                Shoes!
+                Gastroentrology
                 <div className="badge badge-secondary">NEW</div>
               </h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div className="card-actions justify-end">
-                <div className="badge badge-outline">Fashion</div>
-                <div className="badge badge-outline">Products</div>
-              </div>
             </div>
           </div>
           <div className="card w-full md:w-96 bg-base-100 shadow-xl">
             <figure>
               <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                alt="Shoes"
+                src={scoliosis}
+                alt="Scoliosis"
               />
             </figure>
             <div className="card-body">
               <h2 className="card-title">
-                Shoes!
+                Scoliosis
                 <div className="badge badge-secondary">NEW</div>
               </h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div className="card-actions justify-end">
-                <div className="badge badge-outline">Fashion</div>
-                <div className="badge badge-outline">Products</div>
-              </div>
             </div>
           </div>
           <div className="card w-full md:w-96 bg-base-100 shadow-xl">
             <figure>
               <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                alt="Shoes"
+                src={cardiac}
+                alt="cardiac"
               />
             </figure>
             <div className="card-body">
               <h2 className="card-title">
-                Shoes!
+                cardiac rehab
                 <div className="badge badge-secondary">NEW</div>
               </h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div className="card-actions justify-end">
-                <div className="badge badge-outline">Fashion</div>
-                <div className="badge badge-outline">Products</div>
-              </div>
-            </div>
-          </div>
-          <div className="card w-full md:w-96 bg-base-100 shadow-xl">
-            <figure>
-              <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                alt="Shoes"
-              />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">
-                Shoes!
-                <div className="badge badge-secondary">NEW</div>
-              </h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div className="card-actions justify-end">
-                <div className="badge badge-outline">Fashion</div>
-                <div className="badge badge-outline">Products</div>
-              </div>
-            </div>
-          </div>
-          <div className="card w-full md:w-96 bg-base-100 shadow-xl">
-            <figure>
-              <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                alt="Shoes"
-              />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">
-                Shoes!
-                <div className="badge badge-secondary">NEW</div>
-              </h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div className="card-actions justify-end">
-                <div className="badge badge-outline">Fashion</div>
-                <div className="badge badge-outline">Products</div>
-              </div>
-            </div>
-          </div>
-          <div className="card w-full md:w-96 bg-base-100 shadow-xl">
-            <figure>
-              <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                alt="Shoes"
-              />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">
-                Shoes!
-                <div className="badge badge-secondary">NEW</div>
-              </h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div className="card-actions justify-end">
-                <div className="badge badge-outline">Fashion</div>
-                <div className="badge badge-outline">Products</div>
-              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <h1 className="text-4xl font-bold text-center pb-3 mb-8 mt-8 text-blue-400">
+      <h1 className="text-4xl font-bold text-center pb-3 mb-8 mt-8 text-blue-800">
         Sign Up to Book Appointment
       </h1>
       <div className="hero min-h-screen bg-base-200">

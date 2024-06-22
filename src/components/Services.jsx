@@ -1,7 +1,20 @@
 import React from "react";
 import haha from "../assets/undraw_doctors_p6aq (1).svg";
+import scoliosis from "../assets/scoliosis.webp"
+import cardiology from "../assets/cardiology.webp"
+import cardioThoracic from "../assets/cardioThoracic.webp"
+import dentistry from "../assets/dentistry.webp"
+import gastro from "../assets/gastro.webp"
+import nephrology from "../assets/nephrology.jpg"
+import { useNavigate } from 'react-router-dom';
 
 const Services = () => {
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate('/appointment');
+  };
+
   return (
     <>
       <div className="hero min-h-screen bg-base-200 text-blue-400">
@@ -24,112 +37,101 @@ const Services = () => {
         <div className="card card-compact w-96 bg-base-100 shadow-xl">
           <figure>
             <img
-              src="https://www.elationhealth.com/wp-content/uploads/2021/01/iStock-1249601252.jpg"
-              alt="Shoes"
+              src={cardiology}
+              alt="cardiology"
               className="w-full h-48 object-cover"
             />
           </figure>
           <div className="p-6">
-            <h2 className="text-2xl font-bold mb-2">Depression</h2>
-            <p className="text-gray-700 mb-4">
-              If a dog chews shoes whose shoes does he choose?
-            </p>
+            <h2 className="text-2xl font-bold mb-10">Cardiology</h2>
+            
             <div className="text-right">
-              <button className="btn btn-primary">Buy Now</button>
+              <button className="btn btn-primary"  onClick={handleButtonClick}>Book Appointment</button>
             </div>
           </div>
         </div>
         <div className="card card-compact w-96 bg-base-100 shadow-xl">
           <figure>
             <img
-              src="https://www.elationhealth.com/wp-content/uploads/2021/01/iStock-1249601252.jpg"
-              alt="Shoes"
+              src={nephrology}
+              alt="nephrology"
               className="w-full h-48 object-cover"
             />
           </figure>
           <div className="p-6">
-            <h2 className="text-2xl font-bold mb-2">Depression</h2>
-            <p className="text-gray-700 mb-4">
-              If a dog chews shoes whose shoes does he choose?
-            </p>
+            <h2 className="text-2xl font-bold mb-10">Nephrology</h2>
+            
             <div className="text-right">
-              <button className="btn btn-primary">Buy Now</button>
+              <button className="btn btn-primary" onClick={handleButtonClick}>Book Appointment</button>
             </div>
           </div>
         </div>
         <div className="card card-compact w-96 bg-base-100 shadow-xl">
           <figure>
             <img
-              src="https://www.elationhealth.com/wp-content/uploads/2021/01/iStock-1249601252.jpg"
-              alt="Shoes"
+              src={dentistry}
+              alt="dentistry"
               className="w-full h-48 object-cover"
             />
           </figure>
           <div className="p-6">
-            <h2 className="text-2xl font-bold mb-2">Depression</h2>
-            <p className="text-gray-700 mb-4">
-              If a dog chews shoes whose shoes does he choose?
-            </p>
+            <h2 className="text-2xl font-bold mb-10">Dentistry</h2>
+           
             <div className="text-right">
-              <button className="btn btn-primary">Buy Now</button>
+              <button className="btn btn-primary" onClick={handleButtonClick}>Book Appointment</button>
             </div>
           </div>
         </div>
         <div className="card card-compact w-96 bg-base-100 shadow-xl">
           <figure>
             <img
-              src="https://www.elationhealth.com/wp-content/uploads/2021/01/iStock-1249601252.jpg"
-              alt="Shoes"
+              src={cardioThoracic}
+              alt="cardio thoracic"
               className="w-full h-48 object-cover"
             />
           </figure>
           <div className="p-6">
-            <h2 className="text-2xl font-bold mb-2">Depression</h2>
-            <p className="text-gray-700 mb-4">
-              If a dog chews shoes whose shoes does he choose?
-            </p>
+            <h2 className="text-2xl font-bold mb-10">Cardio Thoracic Surgery</h2>
+            
             <div className="text-right">
-              <button className="btn btn-primary">Buy Now</button>
+              <button className="btn btn-primary" onClick={handleButtonClick}>Book Appointment</button>
             </div>
           </div>
         </div>
         <div className="card card-compact w-96 bg-base-100 shadow-xl">
           <figure>
             <img
-              src="https://www.elationhealth.com/wp-content/uploads/2021/01/iStock-1249601252.jpg"
-              alt="Shoes"
+              src={gastro}
+              alt="gastro"
               className="w-full h-48 object-cover"
             />
           </figure>
           <div className="p-6">
-            <h2 className="text-2xl font-bold mb-2">Depression</h2>
-            <p className="text-gray-700 mb-4">
-              If a dog chews shoes whose shoes does he choose?
-            </p>
+            <h2 className="text-2xl font-bold mb-10">Gastroenterology</h2>
+            
             <div className="text-right">
-              <button className="btn btn-primary">Buy Now</button>
+              <button className="btn btn-primary" onClick={handleButtonClick}>Book Appointment</button>
             </div>
           </div>
         </div>
-        <div className="card card-compact w-96 bg-base-100 shadow-xl">
+        <div className="card card-compact w-96 bg-base-90 shadow-xl">
           <figure>
             <img
-              src="https://www.elationhealth.com/wp-content/uploads/2021/01/iStock-1249601252.jpg"
-              alt="Shoes"
+              src={scoliosis}
+              alt="scoliosis"
               className="w-full h-48 object-cover"
             />
           </figure>
           <div className="p-6">
-            <h2 className="text-2xl font-bold mb-2">Depression</h2>
-            <p className="text-gray-700 mb-4">
-              If a dog chews shoes whose shoes does he choose?
-            </p>
+            <h2 className="text-2xl font-bold mb-10">Scoliosis Surgery</h2>
+           
             <div className="text-right">
-              <button className="btn btn-primary">Buy Now</button>
+              <button className="btn btn-primary" onClick={handleButtonClick}>Book Appointment</button>
             </div>
           </div>
         </div>
       </div>
+      
     </>
   );
 };
