@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import sun from "../assets/sun.png";
 import moon from "../assets/moon.png";
 
+
 const Navbar = () => {
   // use theme from local storage if available or set light theme
   const [theme, setTheme] = useState(
@@ -88,8 +89,10 @@ const Navbar = () => {
           <li>
             <Link to={"/meeting"}>Meeting</Link>
           </li>
+         
         </ul>
       </div>
+      
       {/* You can open the modal using document.getElementById('ID').showModal() method */}
       <button
         className="btn mr-10"

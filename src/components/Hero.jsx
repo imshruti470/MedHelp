@@ -6,6 +6,7 @@ import cardiac from "../assets/cardiac.webp"
 import gastro from "../assets/gastro.webp"
 import scoliosis from "../assets/scoliosis.webp"
 import { Link } from "react-router-dom";
+import ReviewSlider from "./ReviewSlider";
 
 const Hero = () => {
   return (
@@ -146,56 +147,8 @@ const Hero = () => {
         </div>
       </div>
 
-      <h1 className="text-4xl font-bold text-center mb-8 mt-8 text-blue-400">
-        What people say about us{" "}
-      </h1>
-      <div className="join join-vertical w-9/12 ml-20">
-        <div className="collapse collapse-arrow join-item border border-base-300">
-          <input type="radio" name="my-accordion-4" defaultChecked />
-          <div className="collapse-title text-xl font-medium">
-            Click to open this one and close others
-          </div>
-          <div className="collapse-content">
-            <p>hello</p>
-          </div>
-        </div>
-        <div className="collapse collapse-arrow join-item border border-base-300">
-          <input type="radio" name="my-accordion-4" />
-          <div className="collapse-title text-xl font-medium">
-            Click to open this one and close others
-          </div>
-          <div className="collapse-content">
-            <p>hello</p>
-          </div>
-        </div>
-        <div className="collapse collapse-arrow join-item border border-base-300">
-          <input type="radio" name="my-accordion-4" />
-          <div className="collapse-title text-xl font-medium">
-            Click to open this one and close others
-          </div>
-          <div className="collapse-content">
-            <p>hello</p>
-          </div>
-        </div>
-        <div className="collapse collapse-arrow join-item border border-base-300">
-          <input type="radio" name="my-accordion-4" />
-          <div className="collapse-title text-xl font-medium">
-            Click to open this one and close others
-          </div>
-          <div className="collapse-content">
-            <p>hello</p>
-          </div>
-        </div>
-        <div className="collapse collapse-arrow join-item border border-base-300">
-          <input type="radio" name="my-accordion-4" />
-          <div className="collapse-title text-xl font-medium">
-            Click to open this one and close others
-          </div>
-          <div className="collapse-content">
-            <p>hello</p>
-          </div>
-        </div>
-      </div>
+     
+      <ReviewSlider/>
     </>
   );
 };
