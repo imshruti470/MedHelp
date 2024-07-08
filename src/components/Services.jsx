@@ -22,10 +22,8 @@ const Services = () => {
           <img src={haha} alt=""/>
           <div>
             <h1 className="text-5xl font-bold">Best Care For Close Ones!</h1>
-            <p className="py-6 text-3xl text-gray-400">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
+            <p className="py-6 text-3xl text-gray-800">
+            Our hospital provides emergency care, advanced surgeries, specialized treatments, and comprehensive diagnostic services, including imaging and laboratory tests, ensuring high-quality healthcare tailored to our patients' needs.
             </p>
             <button className="btn btn-primary color-blue-400">
               Get Started

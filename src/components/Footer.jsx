@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="flex justify-center items-center mt-10 mb-10">
         <div className="stats stats-vertical lg:stats-horizontal shadow">
           <div className="stat">
-            <div className="stat-title">Downloads</div>
+            <div className="stat-title">Patients</div>
             <div className="stat-value">31K</div>
             <div className="stat-desc">Jan 1st - Feb 1st</div>
           </div>
@@ -65,15 +65,15 @@ const Footer = () => {
       >
         <nav>
           <h6 className="footer-title">Services</h6>
-          <Link to="/" className="link link-hover">Branding</Link>
-          <Link to="/" className="link link-hover">Design</Link>
-          <Link to="/" className="link link-hover">Marketing</Link>
-          <Link to="/" className="link link-hover">Advertisement</Link>
+          <Link to="/" className="link link-hover">Contact us</Link>
+          <Link to="/" className="link link-hover">About Us</Link>
+          <Link to="/" className="link link-hover">Services</Link>
+          <Link to="/" className="link link-hover">Find a provider</Link>
         </nav>
         <nav>
           <h6 className="footer-title">Company</h6>
-          <Link to="/" className="link link-hover">About us</Link>
-          <Link to="/" className="link link-hover">Contact</Link>
+          <Link to="/" className="link link-hover">Locations</Link>
+          <Link to="/" className="link link-hover">Health Care Providers</Link>
           <Link to="/" className="link link-hover">Jobs</Link>
           <Link to="/" className="link link-hover">Press kit</Link>
         </nav>
@@ -81,7 +81,7 @@ const Footer = () => {
           <h6 className="footer-title">Legal</h6>
           <Link to="/" className="link link-hover">Terms of use</Link>
           <Link to="/" className="link link-hover">Privacy policy</Link>
-          <Link to="/" className="link link-hover">Cookie policy</Link>
+          
         </nav>
       </footer>
       <footer className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">

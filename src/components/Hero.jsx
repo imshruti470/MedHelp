@@ -18,9 +18,7 @@ const Hero = () => {
             <div>
               <h1 className="text-5xl font-bold">Best Care For Close Ones!</h1>
               <p className="py-6 text-3xl text-gray-900">
-                Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                assumenda excepturi exercitationem quasi. In deleniti eaque aut
-                repudiandae et a id nisi.
+              Welcome to CheckUp, where compassionate care meets cutting-edge technology,dedicated to providing exceptional medical services tailored to meet the diverse needs of our community,ensuring that every patient receives the highest quality healthcare they deserve.
               </p>
               <button className="btn btn-primary color-blue-400">
                 Get Started
